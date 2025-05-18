@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <nav class="nav-links">
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggleBtn">
+    <img id="themeIcon" src="icons/lightmode-b.svg" alt="Toggle Theme">
+  </button>
+</header>
+
+  <!-- Hero Section -->
+<section class="hero-banner">
+  <div class="banner-image">
+    <img src="images/setup.png" alt="background-image" />
+    <h1 class="banner-text">
+      "A jack of all trades is a master of none, but oftentimes better than a master of one."
+    </h1>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="hero-content" id="about">
+    <div class="hero-photo">
+      <img src="images/closeup_me.jpeg" alt="Jasmine Coronel Cacerez" />
+    </div>
+    <div class="hero-description">
+        <h2>
+            About Me
+        </h2>
+        <p>
+        I am Jasmine Coronel Cacerez, a third-year Computer Science undergraduate at the University of the Philippines Cebu.
+        I’m a curious learner with a growing interest in game development, UI/UX design, and quality assurance. I
+        primarily focus on front-end development and I strive to create intuitive and user-friendly interfaces that avoid 
+        redundancy and enhance user experience.
+        </p>
+        
+        <p>
+        My interest in Computer Science began in high school, where I was introduced 
+        to Visual Basic Studio and was inspired to create a mock game as my project. My inclination toward front-end development 
+        and visual design also stems from my background as a self-taught artist. When I first entered college, I had no prior 
+        experience with programming. However, through the guidance of dedicated professors and a wide range of courses, I’ve 
+        since gained hands-on experience with several programming languages. As I continue to grow as a programmer, I’m 
+        eager to expand my skills across the development stack while contributing to meaningful, well-designed projects.
+        </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill"><img src="icons/c.svg" alt="C"><p>C</p></div>
+        <div class="skill"><img src="icons/c++.svg" alt="C++"><p>C++</p></div>
+        <div class="skill"><img src="icons/python.svg" alt="Python"><p>Python</p></div>
+        <div class="skill"><img src="icons/html.svg" alt="HTML"><p>HTML</p></div>
+        <div class="skill"><img src="icons/css.svg" alt="CSS"><p>CSS</p></div>
+        <div class="skill"><img src="icons/javascript.svg" alt="JavaScript"><p>JavaScript</p></div>
+        <div class="skill"><img src="icons/react.svg" alt="React"><p>React</p></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <a href="https://github.com/samijen-recezac/CMSC141-FinalProj" class="project-link" target="_blank">
+            <img src="images/bantugan_main.png" alt="Bantugan 2.0">
+            <h3>Bantugan 2.0</h3>
+            <p>A hybrid visual novel and turn-based game inspired by a class activity from CMSC 21. 
+                The project is currently unfinished and has limited functionality, featuring custom-created sprites and assets. </p>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="https://github.com/TiredCat388/MediSync" class="project-link" target="_blank">
+            <img src="images/medisync_main.png" alt="Medisync">
+            <h3>Medisync</h3>
+            <p>A medical mobile application created by <i>cnxnc</i> for tracking and managing scheduled medications. 
+                This is a work-in-progress project for the CMSC 128 Software Engineering course.</p>
+            </a>
+        </div>
+        <div class="project-card">
+            <a href="https://github.com/Pal-C/BLook" class="project-link" target="_blank">
+            <img src="images/blook.jpeg" alt="BookLook">
+            <h3>BookLook</h3>
+            <p>A book review website developed for the CMSC 126 Web Engineering course.
+                While functional, it remains a work in progress and lacks polish.
+            </p>
+            </a>
+        </div>
+        </a>
+    </div>
+    
+    <!-- Detailed Project View -->
+    <section class="project-section">
+    <h2>Project Showcase</h2>
+    <div class="project-details" data-project="1">
+        <div class="project-images">
+        <button class="prevBtn" aria-label="Previous image">
+            <img 
+            src="icons/left-w.svg" 
+            alt="Previous" 
+            />
+        </button>
+        <img class="carouselImage" src="images/bantugan_main.png" alt="Project image" />
+        <button class="nextBtn" aria-label="Next image">
+            <img 
+            src="icons/right-w.svg" 
+            alt="Next" 
+            />
+        </button>
+        </div>
+        <div class="project-description">
+        <h3>Bantugan 2.0 (2024)</h3>
+        <p>Officially titled Bantugan: Lost in UPC. A game developed in collaboration with Reene Besanez, Maureen Bantugan and Angelinne Trocio. The programs used include Aseprite and Utility. Contributions include game design, graphics, and programming.</p>
+        </div>
+    </div>
+
+    <div class="project-details" data-project="2">
+        <div class="project-images">
+        <button class="prevBtn" aria-label="Previous image">
+            <img 
+            src="icons/left-w.svg" 
+            alt="Previous" 
+            />
+        </button>
+        <img class="carouselImage" src="images/medisync_main.png" alt="Project image" />
+        <button class="nextBtn" aria-label="Next image">
+            <img 
+            src="icons/right-w.svg" 
+            alt="Next" 
+            />
+        </button>
+        </div>
+        <div class="project-description">
+        <h3>Medisync (2025)</h3>
+        <p>An ongoing project by cnxnc. The languages and programs used are React Native, Javascript, Figma. Contributions include designing the UI and frontend development.</p>
+        </div>
+    </div>
+
+    <div class="project-details" data-project="3">
+        <div class="project-images">
+        <button class="prevBtn" aria-label="Previous image">
+            <img 
+            src="icons/left-w.svg" 
+            alt="Previous" 
+            />
+        </button>
+        <img class="carouselImage" src="images/blook.jpeg" alt="Project image" />
+        <button class="nextBtn" aria-label="Next image">
+            <img 
+            src="icons/right-w.svg" 
+            alt="Next" 
+            />
+        </button>
+        </div>
+        <div class="project-description">
+        <h3>BookLook (2025)</h3>
+        <p>A website developed in collaboration with Pauline Rodriguez.  The languages and programs used are HTML, CSS, Figma, and ibisPaintX. Contributions include the designing the UI and frontend development.</p>
+        </div>
+    </div>
+    </section>
+
+  </section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="contact-wrapper">
+    
+    <!-- Left: Contact Methods -->
+    <div class="contact-left">
+      <h2>Contact me on:</h2>
+      <div class="contact-methods">
+        <div class="contact-item">
+          <a href="https://github.com/samijen-recezac" target="_blank" rel="noopener noreferrer">
+            <img 
+            src="icons/github-b.svg" 
+            alt="GitHub icon" 
+            class="contact-icon" 
+            data-light="icons/github.svg" 
+            data-dark="icons/github-b.svg"
+            />
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/jasmine-recezac/" target="_blank" rel="noopener noreferrer">
+            <img 
+                src="icons/linkedin.png" 
+                alt="LinkedIn icon" 
+                class="contact-icon" 
+                data-light="icons/linkedin-w.png" 
+                data-dark="icons/linkedin.png"
+            />
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <a href="mailto:jasmine.cacerez@gmail.com">
+            <img 
+                src="icons/gmail.svg" 
+                alt="Gmail icon" 
+                class="contact-icon" 
+                data-light="icons/gmail.svg" 
+                data-dark="icons/gmail.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <div class="contact-right">
+      <h2>Send a Message</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+  <p>
+    Icons and logos used on this site are sourced from 
+    <a href="https://github.com/bablubambal/All_logo_and_pictures" target="_blank" rel="noopener noreferrer">
+      this GitHub repository
+    </a>. All rights belong to their respective owners.
+  </p>
+</footer>
+
+<script>
+  const toggleBtn = document.getElementById("themeToggleBtn");
+  const iconImg = toggleBtn.querySelector("img");
+  const contactIcons = document.querySelectorAll(".contact-icon");
+
+  const projectImages = {
+  1: [
+    "images/bantugan_main.png",
+    "images/bantugan1.png",
+    "images/bantugan2.png",
+    "images/bantugan3.png",
+    "images/bantugan4.png"
+  ],
+  2: [
+    "images/medisync_main.png",
+    "images/medisync1.png",
+    "images/medisync2.png",
+    "images/medisync3.png",
+    "images/medisync4.png",
+
+  ],
+  3: [
+    "images/blook.jpeg",
+    "images/blook2.png",
+    "images/blook3.png",
+    "images/blook4.png",
+  ]
+};
+
+  function updateContactIcons(theme) {
+    contactIcons.forEach(icon => {
+      icon.src = icon.dataset[theme];
+    });
+  }
+
+  function applyTheme(theme) {
+    if (theme === "dark") {
+      document.body.classList.add("dark-mode");
+      iconImg.src = "icons/lightmode-b.svg";
+    } else {
+      document.body.classList.remove("dark-mode");
+      iconImg.src = "icons/darkmode-w.svg";
+    }
+
+    updateContactIcons(theme);
+  }
+
+  const savedTheme = localStorage.getItem("theme");
+  const themeToUse = savedTheme || "light";
+  applyTheme(themeToUse);
+
+  // Toggle theme
+  toggleBtn.addEventListener("click", () => {
+    const isDark = document.body.classList.toggle("dark-mode");
+    const newTheme = isDark ? "dark" : "light";
+    localStorage.setItem("theme", newTheme);
+
+    applyTheme(newTheme);
+  });
+
+  // Hide/show navbar on scroll
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', function () {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      navbar.classList.add('hide');
+    } else {
+      navbar.classList.remove('hide');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+
+  document.querySelectorAll(".project-details").forEach(project => {
+  const projectId = project.getAttribute("data-project");
+  const images = projectImages[projectId];
+  let currentIndex = 0;
+
+  const imgElement = project.querySelector(".carouselImage");
+  const prevBtn = project.querySelector(".prevBtn");
+  const nextBtn = project.querySelector(".nextBtn");
+
+  function showImage(index) {
+    imgElement.src = images[index];
+  }
+
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
+
+  showImage(currentIndex);
+});
+</script>
+
+</body>
+</html>

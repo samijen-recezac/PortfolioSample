@@ -1,0 +1,422 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #ccc;
+  --text-color2: #333;
+  --text-color3: #333;
+  --accent: #084234;
+  --hover: #95bf8a;
+  --cardbg: #ccc;
+  --button: #084234;
+}
+
+body.dark-mode {
+  --bg-color: #333;
+  --text-color: #333;
+  --text-color2: #ccc;
+  --text-color3: #084234;
+  --accent: #ccc;
+  --hover: #36612b;
+  --cardbg: #ffffff;
+  --button: #3e707e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--hover);
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.theme-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hero Section */
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-image {
+    position: relative;
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 1.5rem;
+    right: -1rem;
+    color: white;
+    font-size: 1.8rem;
+    max-width: 70%;
+    background-color: #08423480;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.hero-content {
+    background-color: var(--bg-color);
+    color: var(--text-color2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 2rem 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-photo {
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    animation: fadeInRight 2s ease-in-out;
+
+}
+
+.hero-photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-description {
+    flex: 2;
+    padding: 1rem;
+    min-width: 300px;
+}
+
+.hero-description p {
+    text-indent: 2em;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Skills Section */
+.skills {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color2);
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Projects Section */
+.projects {
+  padding: 30px;
+  background: var(--bg-color);
+  text-align: center;
+  color: var(--text-color2);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+  background: var(--cardbg);
+  color: var(--text-color3);    
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;  
+    height: 150px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 15px; 
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-section {
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.project-details {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border: 1px;
+  border-color: #ccc;
+  margin-top: 3rem;
+}
+
+.project-images {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-images img {
+  object-fit: contain;
+}
+
+.project-images button {
+  background-color: var(--button);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.project-images .prevBtn, 
+.project-images .nextBtn {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.project-images .carouselImage {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-images button:hover {
+  background-color: var(--hover);
+}
+
+.project-description {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem;
+  background-color: var(--accent);
+  color: var(--text-color);
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-left,
+.contact-right { 
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-left h2,
+.contact-right h2 {
+  margin-bottom: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-methods {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-item .contact-icon {
+  width: auto;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.contact-item .contact-icon:hover {
+  transform: scale(1.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  background-color: #3e707e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-form button:hover {
+  background-color: #305a63;
+  color: #ccc,
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+    from {
+    opacity: 0;
+    transform: translateX(50px);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-photo img {
+    margin: 0 auto;
+  }
+
+  .hero-description {
+    text-align: justify;
+  }
+
+  .skills-grid, .projects-grid {
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+  }
+
+  .project-details {
+    flex-direction: column;
+  }
+  
+}
